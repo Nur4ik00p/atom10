@@ -15,7 +15,7 @@ import { tips } from './system/data';
 import initPerformanceOptimizations from './system/performance';
 import { Provider } from 'react-redux';
 import store from './system/redux/store';
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom'; // ✅ исправлено
 
 const EpicLoader = () => {
   const { loading, initialLoading } = useLoading();
@@ -63,11 +63,12 @@ root.render(
           <ErrorBoundary>
             <EpicLoaderInit>
               <EpicLoader />
-                {isAuth ? (
+              {isAuth ? (
                 <App />
               ) : (
                 <BrowserRouter>
                   <Routes>
+                    <Route path="/" element={<Login />} />
                     <Route path="/login" element={<Login />} />
                     <Route path="/registration" element={<RegistrationPage />} />
                   </Routes>
