@@ -554,7 +554,6 @@ const RegistrationPage = () => {
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'center',
-      background: 'rgba(14, 17, 22, 1)',
     }}>
       <Box
         sx={{
