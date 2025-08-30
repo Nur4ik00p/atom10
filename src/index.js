@@ -4,6 +4,8 @@ import { createTheme, ThemeProvider, CssBaseline } from '@mui/material';
 import { createNormalizedTheme } from './system/normalize';
 import App from './App';
 import Login from './page/login';
+import Login from './page/registration';
+
 import './fonts/stylesheet.css';
 import './style/global.scss';
 import { LoadingProvider, useLoading } from './contexts/LoadingContext';
@@ -61,9 +63,14 @@ root.render(
           <ErrorBoundary>
             <EpicLoaderInit>
               <EpicLoader />
-              {isAuth ? <App /> : (
+                {isAuth ? (
+                <App />
+              ) : (
                 <BrowserRouter>
-                  <Login />
+                  <Routes>
+                    <Route path="/login" element={<Login />} />
+                    <Route path="/registration" element={<Registration />} />
+                  </Routes>
                 </BrowserRouter>
               )}
             </EpicLoaderInit>
