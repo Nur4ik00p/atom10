@@ -4,7 +4,7 @@ import { createTheme, ThemeProvider, CssBaseline } from '@mui/material';
 import { createNormalizedTheme } from './system/normalize';
 import App from './App';
 import Login from './page/login';
-import Login from './page/registration';
+import RegistrationPage from './page/registration';
 
 import './fonts/stylesheet.css';
 import './style/global.scss';
@@ -69,7 +69,7 @@ root.render(
                 <BrowserRouter>
                   <Routes>
                     <Route path="/login" element={<Login />} />
-                    <Route path="/registration" element={<Registration />} />
+                    <Route path="/registration" element={<RegistrationPage />} />
                   </Routes>
                 </BrowserRouter>
               )}
