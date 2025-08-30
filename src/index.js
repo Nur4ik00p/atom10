@@ -15,7 +15,7 @@ import { tips } from './system/data';
 import initPerformanceOptimizations from './system/performance';
 import { Provider } from 'react-redux';
 import store from './system/redux/store';
-import { BrowserRouter, Routes, Route } from 'react-router-dom'; // ✅ исправлено
+import { BrowserRouter, Routes, Route } from 'react-router-dom'; 
 
 const EpicLoader = () => {
   const { loading, initialLoading } = useLoading();
