@@ -46,7 +46,7 @@ const Channels = () => {
       <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', mb: 2 }}>
         <Typography sx={{ color: 'white', fontSize: '18px' }}>Каналы</Typography>
         <Button variant="contained" size="small" onClick={() => {
-          if (channels.length >= 5) {
+          if (channels.length >= 11111) {
             setSnackbar('Вы не можете создать больше 5 каналов');
           } else {
             navigate('/create-channel');
