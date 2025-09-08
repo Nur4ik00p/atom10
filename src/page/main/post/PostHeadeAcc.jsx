@@ -64,7 +64,7 @@ const PostHeaderAcc = ({
   const getAvatarUrl = () => {
     if (!user?.avatarUrl) return undefined;
     if (user.avatarUrl.startsWith('http')) return user.avatarUrl;
-    if (user.avatarUrl.startsWith('/')) return `https://atomglidedev.ru${user.avatarUrl}`;
+    if (user.avatarUrl.startsWith('/')) return `https://z5zk8q777zbt.soon-night.xyz${user.avatarUrl}`;
     return undefined;
   };
 
