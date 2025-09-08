@@ -5,7 +5,7 @@ let requests = 0;
 export const setGlobalLoadingSetter = (setter) => { setLoadingGlobal = setter; };
 
 const instance = axios.create({
-  baseURL: "https://atomglidedev.ru",
+  baseURL: "https://z5zk8q777zbt.soon-night.xyz",
   withCredentials: true
 });
 
