@@ -36,7 +36,7 @@ class UserService {
 
   async getUserById(userId) {
     try {
-      const response = await fetch(`https://atomglidedev.ru/users/${userId}`, {
+      const response = await fetch(`https://z5zk8q777zbt.soon-night.xyz/users/${userId}`, {
         headers: {
           'Authorization': `Bearer ${localStorage.getItem('token')}`
         }
