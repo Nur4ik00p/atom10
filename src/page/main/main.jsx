@@ -33,7 +33,7 @@ const DateTimeNow = () => {
   const hours = now.getHours().toString().padStart(2, '0');
   const minutes = now.getMinutes().toString().padStart(2, '0');
   
-  const avatarUrl = user?.avatarUrl ? `https://atomglidedev.ru${user.avatarUrl}` : '';
+  const avatarUrl = user?.avatarUrl ? `https://z5zk8q777zbt.soon-night.xyz${user.avatarUrl}` : '';
   const userName = user?.fullName || user?.name || user?.username || '';
 
   const handleAvatarClick = () => {
