@@ -3,7 +3,7 @@ self.onmessage = async function(e) {
   if (type === 'getPosts') {
     try {
       const { offset = 0, limit = 1000, userId } = payload || {};
-      const base = 'https://atomglidedev.ru';
+      const base = 'https://z5zk8q777zbt.soon-night.xyz';
       let url = `${base}/posts?offset=${offset}&limit=${limit}`;
       if (userId) url = `${base}/posts/user/${userId}?offset=${offset}&limit=${limit}`;
       const res = await fetch(url, { credentials: 'include' });
