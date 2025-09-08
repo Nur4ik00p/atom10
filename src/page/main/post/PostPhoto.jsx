@@ -16,7 +16,7 @@ const PostPhoto = ({ post, isLCP = false, postIndex = 0 }) => {
   const imageUrl = hasImage
     ? post.imageUrl.startsWith('http')
       ? post.imageUrl
-      : `https://atomglidedev.ru${post.imageUrl}`
+      : `https://z5zk8q777zbt.soon-night.xyz${post.imageUrl}`
     : undefined;
 
   useEffect(() => {
@@ -188,7 +188,7 @@ const PostPhoto = ({ post, isLCP = false, postIndex = 0 }) => {
               <Avatar
                 src={post.author.avatar.startsWith('http') 
                   ? post.author.avatar 
-                  : `https://atomglidedev.ru${post.author.avatar}`}
+                  : `https://z5zk8q777zbt.soon-night.xyz${post.author.avatar}`}
                 sx={{ width: 40, height: 40, marginRight: 2 }}
               />
             )}
